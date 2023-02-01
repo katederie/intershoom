@@ -1,0 +1,129 @@
+
+.all_services {
+    padding: 4rem;
+    /* padding-top: 10rem; */
+    align-items: center;
+    justify-items: center;
+}
+
+.our_services {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: rgb(243, 250, 201);
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      font-size: 45px;
+      padding: 4rem;      
+      font-weight: 400;
+      text-align: center;
+}
+
+.title {
+      background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: rgb(243, 250, 201);
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      font-size: 35px;
+      padding: 1rem;      
+      font-weight: 400;
+      text-align: center;
+}
+
+.description {
+    color: #cfc09f;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: 200;
+    text-align:start;
+    padding: 0 1rem;
+    line-height: 30px;
+}
+
+.box {
+    border: 10px solid #cfc09f;
+    /* box-shadow: 0px 0px 20px rgba(208, 168, 106, 6); */
+    /* border-radius: 15px; */
+}
+
+
+
+
+
+#heartbeat {
+	-webkit-animation: heartbeat 3s ease-in-out infinite both;
+	        animation: heartbeat 3s ease-in-out infinite both;
+}
+
+
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  

@@ -1,0 +1,25 @@
+.all_samples {
+    padding: 4rem;
+    /* padding-top: 10rem; */
+    align-items: center;
+    justify-items: center;
+}
+
+.our_samples {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: rgb(243, 250, 201);
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      font-size: 45px;
+      padding: 4rem;      
+      font-weight: 400;
+      text-align: center;
+}
+
+/* @media screen and (min-width:251px) and (max-width:500px) {
+    .songs_stack {
+        
+    }
+} */

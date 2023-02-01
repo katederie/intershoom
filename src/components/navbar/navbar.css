@@ -1,0 +1,295 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid rgba(208, 168, 106, 6);
+    /* border-bottom: 1px dashed rgba(208, 168, 106, 6); */
+    /* border-bottom: thick double rgba(208, 168, 106, 6); */
+     /* border-bottom: 1.5px ridge rgba(208, 168, 106, 6); */
+  }
+    
+    
+    .navbar_logo {
+      height: 80px;
+      margin: 4px 10px;
+    }
+    
+    .navbar_links {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      /* padding: 15px 0px; */
+      background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: rgb(243, 250, 201);
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      font-size: 25px;
+      margin: 0;
+      font-weight: 400;
+    }
+    
+    li {
+        text-decoration: none;
+        align-content: center;
+        list-style-type: none;
+    }
+
+
+    .navbar_links li:hover {
+      color: rgb(224, 193, 142);
+      text-shadow: 
+          -1px 0 1px #c6bb9f, 
+          0 1px 1px #c6bb9f, 
+          5px 5px 10px rgba(0, 0, 0, 0.4),
+          -5px -5px 10px rgba(0, 0, 0, 0.4);
+    }
+
+
+  .navbar_menu {
+    justify-content: flex-end;
+    align-content: center;
+    position:sticky;
+    margin-right: 2px;
+    display: none;
+    z-index: 3;
+  }
+  
+  .navbar_menu-links {
+    display:flex;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    background: rgb(0, 0, 0);
+    padding: 3rem;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 32px;
+    margin-top: 19.5px;
+    min-width: 24rem;
+    box-shadow: 0px 0px 20px rgba(208, 168, 106, 6);
+    border-radius: 15px;
+  }
+  
+  .navbar_menu-links li {
+    justify-content:space-around;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 2rem 0.7rem;
+    color: rgb(209, 169, 106);
+    background: linear-gradient(to top, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    
+  }
+  
+  .navbar_menu-links li:hover {
+    color: rgb(224, 193, 142);
+    text-shadow: 
+        -1px 0 1px #c6bb9f, 
+        0 1px 1px #c6bb9f, 
+        5px 5px 10px rgba(0, 0, 0, 0.4),
+        -5px -5px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  
+  .scale-in-ver-top {
+      -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  
+   @-webkit-keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  
+
+
+  @media screen and (min-width: 801px) and (max-width: 2600px) {
+    .navbar_links li {
+       font-size: 23px;
+       font-weight: 300;
+       padding-bottom: 2px;
+    }
+    .navbar_logo {
+      height: 80px;
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 800px) {
+    .navbar_links li {
+       font-size: 20px;
+       font-weight: 300;
+    }
+    .navbar_logo {
+      height:80px;
+    }
+  }
+  
+  @media screen and (max-width: 639px) {
+    .navbar_links {
+        display: none;
+    }
+  
+    .navbar_menu {
+        display: flex;
+        margin-right: 7px;
+    }
+  
+    .navbar_menu-links {
+      min-width: 18rem;
+    }
+  
+    .navbar_logo {
+        height:60px;
+    }
+  }
+  
+  
+  @media screen and (min-width:479px) and (max-width: 510px) {
+    .navbar_menu-links {
+      min-width: 31rem;
+    }
+    .navbar_menu {
+      margin-right: 6px;
+    }
+  
+    .navbar_menu-links li {
+      font-size: 26px;
+    }
+  }
+  
+  @media screen and (min-width:445px) and (max-width: 478px) {
+    .navbar_menu-links {
+      min-width: 29rem;
+    }
+    .navbar_menu {
+      margin-right: 5px;
+    }
+  
+    .navbar_menu-links li {
+      font-size: 26px;
+    }
+  }
+  
+  @media screen and (min-width:426px) and (max-width: 444px) {
+    .navbar_menu-links {
+      min-width: 27rem;
+    }
+    .navbar_menu {
+      margin-right: 5px;
+    }
+  
+    .navbar_menu-links li {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (min-width:391px) and (max-width: 425px) {
+    .navbar_menu-links {
+      min-width: 25rem;
+    }
+   
+    .navbar_menu-links li {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (min-width:378px) and (max-width: 390px) {
+    .navbar_menu-links {
+      min-width: 23.5rem;
+    }
+   
+    .navbar_menu-links li {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (min-width:350px) and (max-width: 377px) {
+    .navbar_menu-links {
+      min-width: 23rem;
+    }
+    .navbar_menu {
+      margin-right: 1%;
+    }
+  
+    .navbar_menu-links li {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (min-width:310px) and (max-width: 349px) {
+    .navbar_menu-links {
+      min-width: 20rem;
+      /* min-height: 35rem; */
+    }
+  
+    .navbar_menu-links li {
+      font-size: 24px;
+    }
+  
+    .navbar_menu {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (min-width:210px) and (max-width: 309px) {
+    .navbar_menu-links {
+      min-width: 18rem;
+    }
+   
+    .navbar_menu-links li {
+      font-size: 23.5px;
+      text-align: center;
+    }
+    .navbar_menu {
+      margin-right: 2px;
+    }
+  }
+  

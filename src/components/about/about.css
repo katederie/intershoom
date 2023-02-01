@@ -1,0 +1,37 @@
+.about_us {
+    padding: 0 8rem;
+}
+
+.header_about {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    font-size: 31px;
+    font-weight: 500;
+    background: linear-gradient(to right, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 6rem;
+}
+
+.rider {
+    font-size: 15px;
+    font-weight: 50;
+    text-transform: none;  
+    font-family:'Times New Roman', Times, serif;
+    /* color: #dec094; */
+    color: #e7d0ae;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed;
+    padding: 2rem;
+}
+
+.therider {
+    text-transform: uppercase;   
+    font-size: 25px;  
+}

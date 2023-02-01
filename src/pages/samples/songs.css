@@ -1,0 +1,21 @@
+.stack {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 14%, #cfc09f 6%, #cfc09f 12%,#ffecb3 40%,#3a2c0f 98%);
+
+    /* background:radial-gradient(ellipse at 50% 50%, #c1b381 0%, #6C6240 41%, #3a3110 69%, #000000 100%);     */
+    width: 240px;
+    height: 110px;
+    border: 0.2rem outset rgb(155, 132, 77);
+    outline: 0.6rem rgb(138, 119, 21);
+    box-shadow: 3px 0px 14px rgba(208, 168, 106, 6);
+    border-radius: 12px;
+    padding: 0.5rem 1.2rem;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:251px) and (max-width:650px) {
+    .stack {
+        width: 210px;
+        height: 100px;
+    }
+  }
